@@ -1,12 +1,3 @@
-function Recieve(string) {
-  if text_callstring == text_reciever {
-  var code = statements_recieveinput
-  }
-  else {
-   alert("Failed") 
-  }
-}
-
 Blockly.Blocks['call'] = {
   init: function() {
     this.appendDummyInput()
@@ -35,7 +26,8 @@ Blockly.Blocks['recieve'] = {
 Blockly.JavaScript['call'] = function(block) {
   var text_callstring = block.getFieldValue('callstring');
   // TODO: Assemble JavaScript into code variable.
-function Recieve(text_callstring)
+  var call = text_callstring
+  var code = 0
   return code;
 };
 
@@ -43,6 +35,8 @@ Blockly.JavaScript['recieve'] = function(block) {
   var text_reciever = block.getFieldValue('Reciever');
   var statements_recieveinput = Blockly.JavaScript.statementToCode(block, 'RecieveInput');
   // TODO: Assemble JavaScript into code variable.
-  
+  if call = text_reciever {
+   var code = statements_recieveinput 
+  }
   return code;
 };
