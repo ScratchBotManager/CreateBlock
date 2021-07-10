@@ -52,6 +52,7 @@
    var workspace = Blockly.inject(blocklyDiv, options);
         {media: '../../media/',
          toolbox: document.getElementById('toolbox')});
+    Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
 
     function showCode() {
       // Generate JavaScript code and display it.
