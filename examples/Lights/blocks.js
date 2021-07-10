@@ -15,13 +15,13 @@ Blockly.JavaScript['light'] = function(block) {
   var dropdown_color = block.getFieldValue('Color');
   // TODO: Assemble JavaScript into code variable.
   if (dropdown_color==="R") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "red";"
+  var code = "document.getElementById('dot').style.BackgroundColor=red;"
   }
     if (dropdown_color==="G") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "green";"
+  var code = "document.getElementById('dot').style.BackgroundColor=green;"
   }
     if (dropdown_color==="B") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "blue";"
+  var code = "document.getElementById('dot').style.BackgroundColor=blue;"
   }
   return code;
 };
