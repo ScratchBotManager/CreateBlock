@@ -1,27 +1,19 @@
-Blockly.Blocks['light'] = {
+Blockly.Blocks['lightingcolor'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Lights")
-        .appendField(new Blockly.FieldDropdown([["Red","R"], ["Green","G"], ["Blue","B"]]), "Color");
+        .appendField("Color")
+        .appendField(new Blockly.FieldColour("#ffcc66"), "lightcolor");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(30);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
 };
 
-Blockly.JavaScript['light'] = function(block) {
-  var dropdown_color = block.getFieldValue('Color');
+Blockly.JavaScript['lightingcolor'] = function(block) {
+  var colour_lightcolor = block.getFieldValue('lightcolor');
   // TODO: Assemble JavaScript into code variable.
-  if (dropdown_color==="R") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "red";"
-  }
-    if (dropdown_color==="G") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "green";"
-  }
-    if (dropdown_color==="B") {
-  var code = "document.getElementById('dot').style.BackgroundColor = "blue";"
-  }
+  var code = document.getElementById("dot").style.BackgroundColor = lightcolor;
   return code;
 };
