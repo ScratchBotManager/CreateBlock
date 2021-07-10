@@ -1,5 +1,5 @@
 function ChangeColor(color) {
-   document.getElementById("dot").style.BackgroundColor = color; 
+   document.getElementById("dot").style.backgroundColor = color; 
 }
 
 
