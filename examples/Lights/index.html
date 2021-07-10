@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+    </style>
   <meta charset="utf-8">
   <script src="../../blockly_compressed.js"></script>
   <script src="../../blocks_compressed.js"></script>
@@ -33,6 +42,8 @@
     </block>
   </category>
 </xml>
+  
+<span class="dot"></span>
   
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
