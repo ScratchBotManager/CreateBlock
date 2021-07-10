@@ -49,10 +49,11 @@
 <span class="dot"></span>
   
   <script>
-   var workspace = Blockly.inject(blocklyDiv, options);
+    var demoWorkspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
          toolbox: document.getElementById('toolbox')});
-    Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
+    Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
+                               demoWorkspace);
 
     function showCode() {
       // Generate JavaScript code and display it.
