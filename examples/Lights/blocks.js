@@ -14,6 +14,7 @@ Blockly.Blocks['lightingcolor'] = {
 Blockly.JavaScript['lightingcolor'] = function(block) {
   var colour_lightcolor = block.getFieldValue('lightcolor');
   // TODO: Assemble JavaScript into code variable.
-  var code = document.getElementById("dot").style.BackgroundColor = colour_lightcolor;
+  document.getElementById("dot").style.BackgroundColor = colour_lightcolor;
+  var code = alert("Changed Color")
   return code;
 };
