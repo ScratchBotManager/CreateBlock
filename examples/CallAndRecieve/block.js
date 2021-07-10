@@ -1,6 +1,6 @@
 function Recieve(string) {
   if text_callstring == text_reciever {
-  statements_recieveinput
+  var code = statements_recieveinput
   }
   else {
    alert("Failed") 
@@ -35,7 +35,6 @@ Blockly.Blocks['recieve'] = {
 Blockly.JavaScript['call'] = function(block) {
   var text_callstring = block.getFieldValue('callstring');
   // TODO: Assemble JavaScript into code variable.
-  var code = ;
   return code;
 };
 
@@ -43,6 +42,5 @@ Blockly.JavaScript['recieve'] = function(block) {
   var text_reciever = block.getFieldValue('Reciever');
   var statements_recieveinput = Blockly.JavaScript.statementToCode(block, 'RecieveInput');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
   return code;
 };
