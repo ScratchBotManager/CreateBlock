@@ -35,7 +35,7 @@ Blockly.JavaScript['recieve'] = function(block) {
   var text_reciever = block.getFieldValue('Reciever');
   var statements_recieveinput = Blockly.JavaScript.statementToCode(block, 'RecieveInput');
   // TODO: Assemble JavaScript into code variable.
-  if call = text_reciever {
+  if (call = text_reciever) {
    var code = statements_recieveinput 
   }
   return code;
