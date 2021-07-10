@@ -1,32 +1,15 @@
-{
-  "type": "light",
-  "message0": "Lights %1",
-  "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "Color",
-      "options": [
-        [
-          "Red",
-          "R"
-        ],
-        [
-          "Green",
-          "G"
-        ],
-        [
-          "Blue",
-          "B"
-        ]
-      ]
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": 30,
-  "tooltip": "",
-  "helpUrl": ""
-}
+Blockly.Blocks['light'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Lights")
+        .appendField(new Blockly.FieldDropdown([["Red","R"], ["Green","G"], ["Blue","B"]]), "Color");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(30);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
 
 Blockly.JavaScript['light'] = function(block) {
   var dropdown_color = block.getFieldValue('Color');
