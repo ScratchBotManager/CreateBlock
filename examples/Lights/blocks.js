@@ -1,8 +1,3 @@
-function ChangeColor(color) {
-   document.getElementById("dot").style.backgroundColor = color; 
-}
-
-
 Blockly.Blocks['lightingcolor'] = {
   init: function() {
     this.appendDummyInput()
@@ -19,6 +14,6 @@ Blockly.Blocks['lightingcolor'] = {
 Blockly.JavaScript['lightingcolor'] = function(block) {
   var colour_lightcolor = block.getFieldValue('lightcolor');
   // TODO: Assemble JavaScript into code variable.
-  var code = ChangeColor(colour_lightcolor)
+  var code =    document.getElementById("dot").style.backgroundColor = colour_lightcolor;
   return code;
 };
