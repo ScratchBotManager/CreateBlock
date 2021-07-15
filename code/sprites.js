@@ -22,9 +22,10 @@ Blockly.JavaScript['createsprite'] = function(block) {
   var text_spritey = block.getFieldValue('spritey');
   // TODO: Assemble JavaScript into code variable.
   var img = document.createElement('img')
-  var code = var img = document.createElement('img')
+  var code = var img = 
+  document.createElement('img')
   img.style.cssText = 'position:relative;bottom:' + text_spritey + 'px;left:' + text_spritex + 'px;' 
-  img.src = text_spriteimg;
+  img.src = text_spriteimg
   img.id = text_spritename;
   return code;
 };
