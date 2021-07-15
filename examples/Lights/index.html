@@ -34,7 +34,7 @@
 
   <p>
     <button onclick="showCode()">Show JavaScript</button>
-    <button onclick="runCode()">Run JavaScript</button>
+    <button onclick="runCode()">Hex Code</button>
   </p>
 
   <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
@@ -70,11 +70,6 @@
           'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
       var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
-      try {
-        eval(code);
-      } catch (e) {
-        alert(e);
-      }
     }
   </script>
 
