@@ -1,3 +1,5 @@
+require("google-closure-library");
+
 /**
  * @license
  * Copyright 2019 Google LLC
@@ -5,8 +7,8 @@
  */
 
 /**
- * @fileoverview Dark theme.
- * @author samelh@google.com (Sam El-Husseini)
+ * @fileoverview CBlock theme.
+ * @author johndlee05@gmail.com (John Draken-Scott Lee)
  */
 'use strict';
 
