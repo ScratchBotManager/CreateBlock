@@ -15,8 +15,7 @@ Blockly.Blocks['randomize'] = {
 Blockly.JavaScript['randomize'] = function(block) {
   var variable_output = Blockly.JavaScript.nameDB_.getName(block.getFieldValue('output'), Blockly.Variables.NAME_TYPE);
   var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
-  var Array [value_name];
-  var randomNumber = Math.floor(Math.random()*Array.length);
+  var randomNumber = Math.floor(Math.random()*value_name.length);
   // TODO: Assemble JavaScript into code variable.
   var code = variable_output = randomNumber;
   return code;
