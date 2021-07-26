@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>CreateBlock Editor</title>
+  <script src="custom_renderer.js"></script>
   <script src="../blockly_compressed.js"></script>
   <script src="../blocks_compressed.js"></script>
   <script src="../javascript_compressed.js"></script>
@@ -443,6 +444,7 @@
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
         {media: '../media/',
+         renderer: 'custom_renderer',
          toolbox: document.getElementById('toolbox')});
     Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
                                demoWorkspace);
