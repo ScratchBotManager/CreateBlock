@@ -17,7 +17,7 @@
       font-size: 140%;
     }
   </style>
-  <script src="Math.js"></script>
+  <script src="Advanced.js"></script>
   </head>
 <body>
   <p>
@@ -25,9 +25,7 @@
     <button onclick="runCode()">Run JavaScript</button>
   </p>
 
-  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
-
-  <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div><xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="Logic" colour="#5b80a5">
     <block type="controls_if"></block>
     <block type="logic_compare">
@@ -55,7 +53,7 @@
       <field name="MODE">WHILE</field>
     </block>
     <block type="controls_for">
-      <field name="VAR" id=")5[b7(J])LR_EbbuGc$_">i</field>
+      <field name="VAR" id="(Z.h%*xN??#}qYS6kr5r">i</field>
       <value name="FROM">
         <shadow type="math_number">
           <field name="NUM">1</field>
@@ -73,7 +71,7 @@
       </value>
     </block>
     <block type="controls_forEach">
-      <field name="VAR" id="Q|XT[6OcIJ-(Nu6|Bor/">j</field>
+      <field name="VAR" id="_t~(Lbi]Xbs0W!I7K*sf">j</field>
     </block>
     <block type="controls_flow_statements">
       <field name="FLOW">BREAK</field>
@@ -95,9 +93,6 @@
           <field name="NUM">1</field>
         </shadow>
       </value>
-    </block>
-    <block type="randomize">
-      <field name="output" id="Oehxiq_%SCDdI]t!FfI+">Output</field>
     </block>
     <block type="math_single">
       <field name="OP">ROOT</field>
@@ -190,7 +185,7 @@
       <mutation items="2"></mutation>
     </block>
     <block type="text_append">
-      <field name="VAR" id="_VZhpi%bUPUk}^Okm)y)">item</field>
+      <field name="VAR" id="`9UA*dsHPHVXhL+zO4ZS">item</field>
       <value name="TEXT">
         <shadow type="text">
           <field name="TEXT"></field>
@@ -215,7 +210,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="V2;u^rXbd:U{fCC!9_eL">text</field>
+          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
         </block>
       </value>
       <value name="FIND">
@@ -229,7 +224,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="V2;u^rXbd:U{fCC!9_eL">text</field>
+          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
         </block>
       </value>
     </block>
@@ -239,7 +234,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="STRING">
         <block type="variables_get">
-          <field name="VAR" id="V2;u^rXbd:U{fCC!9_eL">text</field>
+          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
         </block>
       </value>
     </block>
@@ -296,7 +291,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="Uj9tBnZx0H27|sht(,uW">list</field>
+          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
         </block>
       </value>
     </block>
@@ -306,7 +301,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="Uj9tBnZx0H27|sht(,uW">list</field>
+          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
         </block>
       </value>
     </block>
@@ -316,7 +311,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="Uj9tBnZx0H27|sht(,uW">list</field>
+          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
         </block>
       </value>
     </block>
@@ -326,7 +321,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="Uj9tBnZx0H27|sht(,uW">list</field>
+          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
         </block>
       </value>
     </block>
@@ -387,6 +382,12 @@
   <sep></sep>
   <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
   <category name="Functions" colour="#995ba5" custom="PROCEDURE"></category>
+  <category name="Advanced" colour="#5ba55b">
+    <block type="http">
+      <field name="type">get</field>
+      <field name="url">URL</field>
+    </block>
+  </category>
 </xml>
 
 
