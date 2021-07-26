@@ -40,3 +40,7 @@ CustomConstantsProvider = function() {
 };
 Blockly.utils.object.inherits(CustomConstantsProvider,
     Blockly.blockRendering.ConstantProvider);
+
+CustomRenderer.prototype.makeConstants_ = function() {
+  return new CustomConstantsProvider();
+};
