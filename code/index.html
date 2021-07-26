@@ -443,8 +443,7 @@
 
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
-        {media: '../media/',
-         renderer: 'custom_renderer',
+        {renderer: 'custom_renderer', media: '../media/',
          toolbox: document.getElementById('toolbox')});
     Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
                                demoWorkspace);
