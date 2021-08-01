@@ -32,7 +32,7 @@ CustomConstantsProvider = function() {
    * @type {number}
    * @override
    */
-  this.NOTCH_WIDTH = 20;
+  this.NOTCH_WIDTH = 40;
 
   /**
    * The height of the notch used for previous and next connections.
