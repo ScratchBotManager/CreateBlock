@@ -25,7 +25,7 @@
     <button onclick="runCode()">Run JavaScript</button>
   </p>
 
-  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div><xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="Logic" colour="#5b80a5">
     <block type="controls_if"></block>
     <block type="logic_compare">
@@ -53,7 +53,7 @@
       <field name="MODE">WHILE</field>
     </block>
     <block type="controls_for">
-      <field name="VAR" id="(Z.h%*xN??#}qYS6kr5r">i</field>
+      <field name="VAR" id="9c?w^HiRi/MWU89}ljLH">i</field>
       <value name="FROM">
         <shadow type="math_number">
           <field name="NUM">1</field>
@@ -71,7 +71,7 @@
       </value>
     </block>
     <block type="controls_forEach">
-      <field name="VAR" id="_t~(Lbi]Xbs0W!I7K*sf">j</field>
+      <field name="VAR" id="q:N$XJ1v/H}c~ZP6?|^R">j</field>
     </block>
     <block type="controls_flow_statements">
       <field name="FLOW">BREAK</field>
@@ -185,7 +185,7 @@
       <mutation items="2"></mutation>
     </block>
     <block type="text_append">
-      <field name="VAR" id="`9UA*dsHPHVXhL+zO4ZS">item</field>
+      <field name="VAR" id="#K7CMb6!5%oJG*tbD_oz">item</field>
       <value name="TEXT">
         <shadow type="text">
           <field name="TEXT"></field>
@@ -210,7 +210,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
+          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
         </block>
       </value>
       <value name="FIND">
@@ -224,7 +224,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
+          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
         </block>
       </value>
     </block>
@@ -234,7 +234,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="STRING">
         <block type="variables_get">
-          <field name="VAR" id="WJKDH}UJ!l):j/O*`A,_">text</field>
+          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
         </block>
       </value>
     </block>
@@ -291,7 +291,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
+          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
         </block>
       </value>
     </block>
@@ -301,7 +301,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
+          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
         </block>
       </value>
     </block>
@@ -311,7 +311,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
+          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
         </block>
       </value>
     </block>
@@ -321,7 +321,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="=Y6QgsOnN%4YNFIq4^1Q">list</field>
+          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
         </block>
       </value>
     </block>
@@ -382,57 +382,11 @@
   <sep></sep>
   <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
   <category name="Functions" colour="#995ba5" custom="PROCEDURE"></category>
+  <category name="Custom" colour="#9fa55b">
+    <block type="valuetoblock"></block>
+    <block type="blockvalue"></block>
+  </category>
 </xml>
-
-
-  <xml xmlns="https://developers.google.com/blockly/xml" id="startBlocks" style="display: none">
-    <block type="controls_if" inline="false" x="20" y="20">
-      <mutation else="1"></mutation>
-      <value name="IF0">
-        <block type="logic_compare" inline="true">
-          <field name="OP">EQ</field>
-          <value name="A">
-            <block type="math_arithmetic" inline="true">
-              <field name="OP">MULTIPLY</field>
-              <value name="A">
-                <block type="math_number">
-                  <field name="NUM">6</field>
-                </block>
-              </value>
-              <value name="B">
-                <block type="math_number">
-                  <field name="NUM">7</field>
-                </block>
-              </value>
-            </block>
-          </value>
-          <value name="B">
-            <block type="math_number">
-              <field name="NUM">42</field>
-            </block>
-          </value>
-        </block>
-      </value>
-      <statement name="DO0">
-        <block type="text_print" inline="false">
-          <value name="TEXT">
-            <block type="text">
-              <field name="TEXT">Don't panic</field>
-            </block>
-          </value>
-        </block>
-      </statement>
-      <statement name="ELSE">
-        <block type="text_print" inline="false">
-          <value name="TEXT">
-            <block type="text">
-              <field name="TEXT">Panic</field>
-            </block>
-          </value>
-        </block>
-      </statement>
-    </block>
-  </xml>
 
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
@@ -467,34 +421,3 @@
 
 </body>
 </html>
-<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-    <category name="Logic" colour="%{BKY_LOGIC_HUE}">
-      <block type="controls_if"></block>
-      <block type="logic_compare"></block>
-      <block type="logic_operation"></block>
-      <block type="logic_negate"></block>
-      <block type="logic_boolean"></block>
-    </category>
-    <category name="Loops" colour="%{BKY_LOOPS_HUE}">
-      <block type="controls_repeat_ext">
-        <value name="TIMES">
-          <block type="math_number">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-      </block>
-      <block type="controls_whileUntil"></block>
-    </category>
-    <category name="Math" colour="%{BKY_MATH_HUE}">
-      <block type="math_number">
-        <field name="NUM">123</field>
-      </block>
-      <block type="math_arithmetic"></block>
-      <block type="math_single"></block>
-    </category>
-    <category name="Text" colour="%{BKY_TEXTS_HUE}">
-      <block type="text"></block>
-      <block type="text_length"></block>
-      <block type="text_print"></block>
-    </category>
-  </xml>
