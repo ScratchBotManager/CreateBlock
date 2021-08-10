@@ -34,7 +34,7 @@ Blockly.JavaScript['valuetoblock'] = function(block) {
 Blockly.JavaScript['blockvalue'] = function(block) {
   var statements_value = Blockly.JavaScript.statementToCode(block, 'value');
   // TODO: Assemble JavaScript into code variable.
-  var code = statements_value';
+  var code = statements_value;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
