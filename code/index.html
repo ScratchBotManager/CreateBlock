@@ -24,6 +24,7 @@
     <button onclick="showCode()">Show JavaScript</button>
     <button onclick="runCode()">Run JavaScript</button>
   </p>
+  <div id="blocklyDiv"></div>
 
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="Logic" colour="#5b80a5">
@@ -53,7 +54,7 @@
       <field name="MODE">WHILE</field>
     </block>
     <block type="controls_for">
-      <field name="VAR" id="9c?w^HiRi/MWU89}ljLH">i</field>
+      <field name="VAR" id="ouIO[h}s5_}T8Nj`01*V">i</field>
       <value name="FROM">
         <shadow type="math_number">
           <field name="NUM">1</field>
@@ -71,7 +72,7 @@
       </value>
     </block>
     <block type="controls_forEach">
-      <field name="VAR" id="q:N$XJ1v/H}c~ZP6?|^R">j</field>
+      <field name="VAR" id="3$EG(88D.l?c{wBues+;">j</field>
     </block>
     <block type="controls_flow_statements">
       <field name="FLOW">BREAK</field>
@@ -185,7 +186,7 @@
       <mutation items="2"></mutation>
     </block>
     <block type="text_append">
-      <field name="VAR" id="#K7CMb6!5%oJG*tbD_oz">item</field>
+      <field name="VAR" id="(-2{N(@4Zme.l?h^*B_i">item</field>
       <value name="TEXT">
         <shadow type="text">
           <field name="TEXT"></field>
@@ -210,7 +211,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
+          <field name="VAR" id="XFBNrGZy$i@NJd-wpGV-">text</field>
         </block>
       </value>
       <value name="FIND">
@@ -224,7 +225,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
+          <field name="VAR" id="XFBNrGZy$i@NJd-wpGV-">text</field>
         </block>
       </value>
     </block>
@@ -234,7 +235,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="STRING">
         <block type="variables_get">
-          <field name="VAR" id=".)[HkB3l]edQftrfggr-">text</field>
+          <field name="VAR" id="XFBNrGZy$i@NJd-wpGV-">text</field>
         </block>
       </value>
     </block>
@@ -291,7 +292,7 @@
       <field name="END">FIRST</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
+          <field name="VAR" id="][3lLB*r5,uRYuvegNWl">list</field>
         </block>
       </value>
     </block>
@@ -301,7 +302,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="VALUE">
         <block type="variables_get">
-          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
+          <field name="VAR" id="][3lLB*r5,uRYuvegNWl">list</field>
         </block>
       </value>
     </block>
@@ -311,7 +312,7 @@
       <field name="WHERE">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
+          <field name="VAR" id="][3lLB*r5,uRYuvegNWl">list</field>
         </block>
       </value>
     </block>
@@ -321,7 +322,7 @@
       <field name="WHERE2">FROM_START</field>
       <value name="LIST">
         <block type="variables_get">
-          <field name="VAR" id="pzuL.,y3`zf+D;(|=I2b">list</field>
+          <field name="VAR" id="][3lLB*r5,uRYuvegNWl">list</field>
         </block>
       </value>
     </block>
@@ -382,6 +383,10 @@
   <sep></sep>
   <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
   <category name="Functions" colour="#995ba5" custom="PROCEDURE"></category>
+  <category name="Custom" colour="#9fa55b">
+    <block type="valuetoblock"></block>
+    <block type="blockvalue"></block>
+  </category>
 </xml>
   
    <xml xmlns="https://developers.google.com/blockly/xml" id="startBlocks" style="display: none">
