@@ -16,7 +16,8 @@ Blockly.Blocks['blockvalue'] = {
     this.appendStatementInput("value")
         .setCheck(null)
         .appendField("Block");
-    this.setOutput(true, null);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
@@ -27,7 +28,7 @@ Blockly.Blocks['blockvalue'] = {
 Blockly.JavaScript['valuetoblock'] = function(block) {
   var value_blocks = Blockly.JavaScript.valueToCode(block, 'blocks', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = '...';
+  var code = value_blocks;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -35,7 +36,7 @@ Blockly.JavaScript['valuetoblock'] = function(block) {
 Blockly.JavaScript['blockvalue'] = function(block) {
   var statements_value = Blockly.JavaScript.statementToCode(block, 'value');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...';
+  var code = statements_value;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
