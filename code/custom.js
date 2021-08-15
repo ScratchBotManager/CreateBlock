@@ -4,7 +4,8 @@ Blockly.Blocks['valuetoblock'] = {
         .setCheck(null)
         .appendField("Block");
     this.setInputsInline(true);
-    this.setOutput(true, null);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
@@ -16,8 +17,7 @@ Blockly.Blocks['blockvalue'] = {
     this.appendStatementInput("value")
         .setCheck(null)
         .appendField("Block");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
+    this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
