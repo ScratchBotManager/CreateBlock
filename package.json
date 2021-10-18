@@ -79,7 +79,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-umd": "^2.0.0",
     "js-green-licenses": "^3.0.0",
-    "mocha": "^8.1.1",
+    "mocha": "^9.1.3",
     "readline-sync": "^1.4.10",
     "rimraf": "^3.0.2",
     "selenium-standalone": "^6.17.0",
