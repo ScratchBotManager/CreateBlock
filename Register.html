@@ -1,20 +1,13 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Register</title>
-</head>
-<body>
-<form>
-  <table>
-    <tr>
-      <td>
-        Name :
-      </td>
-      <td>
-        <input type="text" name="">
-      </td>
-    </tr>
-  </table>
-  </form>
+  <head>
+    <title>Register</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
